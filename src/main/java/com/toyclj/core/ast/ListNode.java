@@ -1,3 +1,5 @@
 package com.toyclj.core.ast;
 
-public class ListNode {}
+import java.util.List;
+
+record ListNode(List<Node> children) implements Node {}

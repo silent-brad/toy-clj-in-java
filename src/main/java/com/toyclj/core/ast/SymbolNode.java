@@ -1,3 +1,5 @@
-package com.toycli.core.types.SymbolNode;
+package com.toyclj.core.ast;
 
-public interface SymbolNode {}
+import com.toyclj.core.types.Symbol;
+
+record SymbolNode(Symbol sym) implements Node {}

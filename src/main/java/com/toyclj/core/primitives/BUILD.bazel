@@ -2,4 +2,8 @@ java_library(
     name = "primitives",
     srcs = glob(["*.java"]),
     visibility = ["//visibility:public"],
+    deps = [
+      "//src/main/java/com/toyclj/core/env:env",
+      "//src/main/java/com/toyclj/core/types:types"
+    ],
 )

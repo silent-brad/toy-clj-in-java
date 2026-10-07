@@ -1,3 +1,5 @@
-package com.toycli.core.types.LiteralNode;
+package com.toyclj.core.ast;
 
-public interface LiteralNode {}
+import com.toyclj.core.types.Value;
+
+record LiteralNode(Value val) implements Node {}

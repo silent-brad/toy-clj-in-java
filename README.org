@@ -1,8 +1,0 @@
-#+TITLE: Toy Clojure in Java
-#+AUTHOR: Brad White
-#+DESCRIPTION: Simple Clojure Interpreter in Java
-#+DATE: 10/07/2026
-
-A simple Clojure lisp interpreter implemented in Java.
-
-Inspired from [[https://bernsteinbear.com/blog/lisp/][Max Bernstein's Writing a Lisp series]].

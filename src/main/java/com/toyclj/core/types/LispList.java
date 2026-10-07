@@ -1,3 +1,5 @@
-package com.toyclj.core.types.LispList;
+package com.toyclj.core.types;
 
-public class LispList {}
+import java.util.List;
+
+public record LispList(List<Value> items) implements Value {}

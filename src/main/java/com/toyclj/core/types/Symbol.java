@@ -1,3 +1,3 @@
-package com.toyclj.core.types.Symbol;
+package com.toyclj.core.types;
 
-public class Symbol {}
+public record Symbol(String name) implements Value {}

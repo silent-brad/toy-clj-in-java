@@ -4,6 +4,7 @@ java_library(
     visibility = ["//visibility:public"],
     deps = [
       "//src/main/java/com/toyclj/core/ast:ast",
+      "//src/main/java/com/toyclj/core/env:env",
       "//src/main/java/com/toyclj/core/types:types",
       "//src/main/java/com/toyclj/core/patterns:patterns",
       "//src/main/java/com/toyclj/core/primitives:primitives",

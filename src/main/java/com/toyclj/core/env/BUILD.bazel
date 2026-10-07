@@ -1,0 +1,6 @@
+java_library(
+    name = "env",
+    srcs = glob(["Environment.java"]),
+    visibility = ["//visibility:public"],
+    deps = ["//src/main/java/com/toyclj/core/types:types"],
+)

@@ -1,4 +1,4 @@
-package com.toyclj.core.types.Value;
+package com.toyclj.core.types;
 
 /** sealed interface + concrete records */
-public interface Value {}
+public sealed interface Value permits Symbol, LispList, NumberVal, BoolVal {}

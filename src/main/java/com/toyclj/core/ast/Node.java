@@ -1,4 +1,4 @@
-package com.toycli.core.types.Node;
+package com.toyclj.core.ast;
 
 /** base AST node (or sealed interface) */
-public interface Node {}
+public sealed interface Node permits ListNode, SymbolNode, LiteralNode {}
