@@ -1,0 +1,16 @@
+load("@contrib_rules_jvm//java:defs.bzl", "java_test_suite", "JUNIT5_DEPS")
+
+java_test_suite(
+    name = "core_tests",
+    srcs = glob(["**/*Test.java"]),
+    runner = "junit5",
+    size = "small",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//src/main/java/com/toyclj/core:core",
+        # add other core sub-packages if needed:
+        # "//src/main/java/com/toyclj/core/ast:ast",
+        # "//src/main/java/com/toyclj/core/primitives:primitives",
+        "@maven//:org_junit_jupiter_junit_jupiter_api",
+    ] + JUNIT5_DEPS,
+)

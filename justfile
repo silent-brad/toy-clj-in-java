@@ -13,6 +13,10 @@ run:
 test:
     bazel test //...
 
+# Pin maven dependencies
+pin-maven:
+    REPIN=1 bazel run @maven//:pin
+
 # Clean Bazel outputs
 clean:
     bazel clean

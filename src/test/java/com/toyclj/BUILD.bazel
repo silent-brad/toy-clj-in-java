@@ -1,0 +1,14 @@
+load("@contrib_rules_jvm//java:defs.bzl", "java_junit5_test", "JUNIT5_DEPS")
+
+java_junit5_test(
+    name = "app_test",
+    srcs = ["AppTest.java"],
+    test_class = "com.toyclj.AppTest",
+    size = "small",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//src/main/java/com/toyclj:app",
+        "//src/main/java/com/toyclj/core:core",
+        "@maven//:org_junit_jupiter_junit_jupiter_api",
+    ] + JUNIT5_DEPS,
+)

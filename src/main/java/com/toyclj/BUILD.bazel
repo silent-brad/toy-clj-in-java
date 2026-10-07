@@ -1,6 +1,7 @@
 java_binary(
     name = "app",
     srcs = ["App.java"],
+    visibility = ["//visibility:public"],
     main_class = "com.toyclj.App",
     deps = ["//src/main/java/com/toyclj/core:core"],
 )

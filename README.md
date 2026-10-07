@@ -1,8 +1,6 @@
-# Toy Clojure in Java
+# toy-clj-in-java
 
-Simple Clojure Interpreter in Java
-
-A simple Clojure lisp interpreter implemented in Java.
+A simple Clojure inspired lisp interpreter implemented in Java.
 
 ## Usage
 
