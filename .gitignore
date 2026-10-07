@@ -1,0 +1,25 @@
+# Bazel
+bazel-*
+.bazelrc.user
+MODULE.bazel.lock
+
+# Nix
+.direnv
+result
+result-*
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Vim
+.*.swp
+.*.swo
+.*.swn
+.*.swm
+
+# OS X
+.DS_Store

@@ -1,0 +1,5 @@
+common --enable_bzlmod
+
+build --java_runtime_version=25
+build --tool_java_runtime_version=25
+build --javacopt=--release=25

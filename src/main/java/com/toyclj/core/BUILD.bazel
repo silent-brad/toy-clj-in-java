@@ -1,0 +1,12 @@
+java_library(
+    name = "core",
+    srcs = glob(["*.java"]),
+    visibility = ["//visibility:public"],
+    deps = [
+      "//src/main/java/com/toyclj/core/ast:ast",
+      "//src/main/java/com/toyclj/core/types:types",
+      "//src/main/java/com/toyclj/core/patterns:patterns",
+      "//src/main/java/com/toyclj/core/primitives:primitives",
+      "//src/main/java/com/toyclj/core/macros:macros"
+    ],
+)
